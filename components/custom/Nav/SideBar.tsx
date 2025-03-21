@@ -3,9 +3,8 @@
 import { usePathname } from "next/navigation";
 import { FiX } from "react-icons/fi";
 import { BiBong, BiCoin } from "react-icons/bi";
-import { TfiTablet } from "react-icons/tfi";
+import { TfiTablet, TfiClipboard } from "react-icons/tfi";
 
-// Define link structure
 interface NavLinksItem {
   id: number;
   name: string;
@@ -17,21 +16,27 @@ const links: NavLinksItem[] = [
   {
     id: 1,
     name: "About",
-    href: "/About",
+    href: "/cyberhome/About",
     icon: BiBong,
   },
   {
     id: 2,
     name: "Contact",
-    href: "/Contact",
+    href: "/cyberhome/Contact",
     icon: TfiTablet,
   },
   {
     id: 3,
     name: "Services",
-    href: "/Services",
+    href: "/cyberhome/Services",
     icon: BiCoin,
   },
+  {
+    id: 4,
+    name: "Assessment",
+    href: "cyberhome/assessment",
+    icon: TfiClipboard,
+  }
 ];
 
 const Sidebar = ({ onClose }: { onClose: () => void }) => {
@@ -45,7 +50,6 @@ const Sidebar = ({ onClose }: { onClose: () => void }) => {
         </button>
       </div>
 
-      {/* Sidebar Navigation */}
       <nav className="mt-4 space-y-2">
         {links.map((link) => (
           <a

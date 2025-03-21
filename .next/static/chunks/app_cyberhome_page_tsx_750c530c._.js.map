@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/nano/Desktop/Github%20Projects/nanosecconsulting/app/cyberhome/page.tsx"],"sourcesContent":["\"use client\"\r\n\r\nconst CyberHome = () => {\r\n    \r\n    return (\r\n        <div className=\"p-5\">\r\n            <div className=\"flex justify-center items-center\">\r\n                <h1 className=\"text-4xl md:text-6xl font-bold mt-6 text-neon-blue\">Welcome To Nano Sec Consulting</h1>\r\n            </div>\r\n            <div className=\"bg-gray-500\">\r\n\r\n            </div>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default CyberHome;\r\n"],"names":[],"mappings":";;;;AAAA;;AAEA,MAAM,YAAY;IAEd,qBACI,6LAAC;QAAI,WAAU;;0BACX,6LAAC;gBAAI,WAAU;0BACX,cAAA,6LAAC;oBAAG,WAAU;8BAAqD;;;;;;;;;;;0BAEvE,6LAAC;gBAAI,WAAU;;;;;;;;;;;;AAK3B;KAZM;uCAcS","debugId":null}},
+    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

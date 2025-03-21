@@ -186,6 +186,26 @@ a:hover {
   --sidebar-ring: oklch(0.439 0 0);
 }
 
+/* Terminal Style */
+.terminal-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00eaff; /* Terminal Green */
+}
+
+/* Blinking Cursor */
+.cursor {
+  width: 10px;
+  height: 1.2em;
+  background-color: #00FF00;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

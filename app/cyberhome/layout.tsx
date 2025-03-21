@@ -5,8 +5,7 @@ import Navigation from "@/components/custom/Nav/Navigation";
 
 const CyberLayout = ({ children }: { children: React.ReactNode }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  // Close sidebar when clicking outside
+  
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (isSidebarOpen && !(event.target as HTMLElement).closest(".sidebar")) {
@@ -19,10 +18,6 @@ const CyberLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="relative flex min-h-screen">
-      {/* <video autoPlay loop muted playsInline className="absolute top-0 left-0 w-full h-full object-cover -z-10">
-        <source src="/video.mp4" type="video/mp4" />
-      </video> */}
-
       <div
         className={`fixed inset-y-0 left-0 w-64 bg-gray-900 bg-opacity-90 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
